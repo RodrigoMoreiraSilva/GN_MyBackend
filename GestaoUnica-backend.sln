@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31702.278
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GestaoUnica-backend", "GestaoUnica-backend\GestaoUnica-backend.csproj", "{2316477E-4763-4907-A37E-8FBB596612F2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2316477E-4763-4907-A37E-8FBB596612F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2316477E-4763-4907-A37E-8FBB596612F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2316477E-4763-4907-A37E-8FBB596612F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2316477E-4763-4907-A37E-8FBB596612F2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {211D63A2-DDA2-4297-BC9E-B32F67C85548}
+	EndGlobalSection
+EndGlobal

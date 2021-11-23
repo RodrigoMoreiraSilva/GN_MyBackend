@@ -1,0 +1,9 @@
+﻿################################################################################
+# Este arquivo .gitignore foi criado automaticamente pelo Microsoft(R) Visual Studio.
+################################################################################
+
+/GestaoUnica-backend/GestaoUnica-backend/obj
+/GestaoUnica-backend/.vs/GestaoUnica-backend/v16/.suo
+/GestaoUnica-backend/GestaoUnica-backend/bin
+/GestaoUnica-backend/.vs/GestaoUnica-backend/config
+/GestaoUnica-backend/.vs/GestaoUnica-backend/DesignTimeBuild/.dtbcache.v2
