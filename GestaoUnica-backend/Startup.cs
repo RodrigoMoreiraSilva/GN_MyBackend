@@ -10,9 +10,11 @@ using GestaoUnica_backend.Services.Sealeds;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.DependencyInjection.Extensions;
 using Microsoft.Extensions.Hosting;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
@@ -37,7 +39,12 @@ namespace GestaoUnica_backend
                 x.AddPolicy(name: "AllowOrigin",
                     builder =>
                     {
-                        builder.WithOrigins("http://localhost:4200")
+                        builder.WithOrigins(
+                                            "http://localhost:4200"
+                                            //"http://gestaounica.dev.intranet.gesto.com.br"
+                                            //"http://gestaounica.qa.intranet.gesto.com.br"
+                                            //"https://www.gestaounica.gesto.com.br"
+                                            )
                                .AllowAnyHeader()
                                .AllowAnyMethod();
                     });
@@ -86,6 +93,9 @@ namespace GestaoUnica_backend
             services.AddScoped<IUserBusiness, UserBusiness>();
             services.AddScoped<IRoleBusiness, RoleBusiness>();
             services.AddScoped<IActiveDirectoryBusiness, ActiveDirectoryBusiness>();
+            services.TryAddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+            services.AddScoped<IFileBusiness, FileBusiness>();
+            services.AddScoped<IDemotech_ServicoBusiness, Demotech_ServicoBusiness>();
             #endregion
 
             #region Services

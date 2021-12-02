@@ -4,14 +4,16 @@ using GestaoUnica_backend.Context;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace GestaoUnica_backend.Migrations
 {
     [DbContext(typeof(SQLContext))]
-    partial class SQLContextModelSnapshot : ModelSnapshot
+    [Migration("20211126114028_Dominios_v3.0")]
+    partial class Dominios_v30
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

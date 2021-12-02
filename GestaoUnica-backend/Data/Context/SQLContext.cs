@@ -29,6 +29,7 @@ namespace GestaoUnica_backend.Context
         public DbSet<GrupoEmpresa> GrupoEmpresa { get; set; }
         public DbSet<Log> Logs { get; set; }
         public DbSet<Pessoa> Pessoas { get; set; }
+        public DbSet<Demotech_Servico> Demotech_Servicos { get; set; }
         #endregion
 
 
@@ -36,5 +37,7 @@ namespace GestaoUnica_backend.Context
         {
             optionsBuilder.UseSqlServer(_config.GetConnectionString("Connection"));
         }
+        
+        public DbSet<GestaoUnica_backend.Models.Demotech_Servico> Demotech_Servico { get; set; }
     }
 }

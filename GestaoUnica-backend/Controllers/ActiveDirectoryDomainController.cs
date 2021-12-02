@@ -1,11 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using GestaoUnica_backend.Context;
 using GestaoUnica_backend.Services.Models;
 using GestaoUnica_backend.Business.Interfaces;
 using Microsoft.AspNetCore.Authorization;
